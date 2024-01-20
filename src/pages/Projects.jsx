@@ -13,13 +13,13 @@ const Projects = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          I have gone through many projects over my 4 years of coding, but here are the best ones so far. Many of them are open-sourced and if you'd like to see them, feel freet to go to my Github or CodePen Pages. Feel free to contribute your ideas for further enhancements. Your feedback is highly valued!
+          I have gone through many projects over my 4 years of coding, but here are the best ones so far. Many of them are open-sourced and if you'd like to see them, feel freet to go to my <Link to="https://github.com/Dreigannadoit" className="underline decoration-1 text-black-500 font-semibold">Github</Link> or <Link to="https://codepen.io/dreigannadoit" className="underline decoration-1 text-black-500 font-semibold">CodePen</Link> Pages. Feel free to contribute your ideas for further enhancements. Your feedback is highly valued!
         </p>
       </div>
 
-      <div className="flex flex-wrap my-20 gap-16">
+      <div className="flex flex-wrap py-10 my-10  gap-16">
         {projects.map((project) => (
-          <div className="lg:w-[400px] w-full rounded-md py-[5%] px-8 flex items-center flex-col justify-center c-shad" key={project.name}>
+          <div className="lg:w-[400px] w-full rounded-md py-[6%] px-8 flex items-center flex-col justify-center c-shad" key={project.name}>
             <div className="block-container w-12 h-12">
               <div className={`btn-back rounded-xl ${project.theme}`}></div>
               <div className="btn-front rounded-xl flex justify-center items-center">
@@ -34,6 +34,8 @@ const Projects = () => {
               <p className="mt-2 text-slate-500">
                 {project.description}
               </p>
+              <br />
+              <p>{project.responsive}</p>
               <div className="mt-5 flex items-center gap-2 font-poppins">
                 <Link to={project.link} target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600">
                   Live To Project

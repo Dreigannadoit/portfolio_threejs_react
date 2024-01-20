@@ -37,9 +37,11 @@ import fist from './fist.png'
 import pawprint from './pawprint.png'
 import sword from './sword.png'
 import programing from './programing.png'
+import aR from './AR.png'
 import rnrSeaside from './rnrSeaside.svg'
  
 export {
+    aR,
     upwork,
     django,
     python,

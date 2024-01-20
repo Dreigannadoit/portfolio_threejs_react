@@ -20,7 +20,9 @@ import {
     godot,
     c_sharp,
     blender,
-    rnrSeaside
+    rnrSeaside,
+    git,
+    aR
 } from "../assets/icons";
 
 export const meStuffs = [
@@ -52,6 +54,11 @@ export const skills = [
     {
         imageUrl: github,
         name: "GitHub",
+        type: "Version Control",
+    },
+    {
+        imageUrl: git,
+        name: "git",
         type: "Version Control",
     },
     {
@@ -105,6 +112,7 @@ export const experiences = [
     {
         title: "Software Developer",
         company_name: "The Philippine Global School",
+        orgType: "Educatuional Organization",
         icon: tpgs,
         iconBg: "#E77044",
         date: "September 2019 - June 2020",
@@ -118,6 +126,7 @@ export const experiences = [
     {
         title: "Website Developer",
         company_name: "RnR Seaside Condo-Aprtment",
+        orgType: "Air BnB Business",
         icon: rnrSeaside,
         iconBg: "#3C84BD",
         date: "Jan 2022 - June 2022",
@@ -149,38 +158,59 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: aR,
+        theme: 'btn-back-red',
+        name: 'Video Utilizing Augmented Reality',
+        description: 'Video project utilizing 3D augmented reality.',
+        link: 'https://youtu.be/ExgiUAlb8NQ',
+        responsive: '',
+    },
+    {
+        iconUrl: rnrSeaside,
+        theme: 'btn-back-blue',
+        name: 'RnR Seaside Condotel',
+        description: 'A Web application for an Online Air BnB Business that displays the facilities of this apartment.',
+        link: 'https://rnrseasideapartment.github.io/',
+        responsive: '',
+    },
+    {
         iconUrl: programing,
         theme: 'btn-back-blue',
         name: 'Made Easy',
-        description: 'Designed a Web application for an Online Organization that specializes in teaching children basic programing and computer science.',
+        description: 'A Web application for an Online Organization that specializes in teaching children basic programing and computer science.',
         link: 'https://dreigannadoit.github.io/madeeasy.github.io/Pages/header-page.html',
+        responsive: 'Best viewed on PC',
     },
     {
         iconUrl: sword,
         theme: 'btn-back-red',
         name: 'Pygame - 8-bit Zelda Game',
-        description: 'Developed a pythone application that runs a 8-bit stylized game similar to the popular Nintendo GamEe: Zelda. ',
-        link: 'https://github.com/Dreigannadoit/pygame_zelda_dark_souls',
+        description: 'A pythone application that runs a 8-bit stylized game similar to the popular Nintendo GamEe: Zelda. ',
+        link: 'https://github.com/Dreigannadoit/pygame_zelda_dark_souls/tree/master',
+        responsive: '',
     },
     {
         iconUrl: pawprint,
         theme: 'btn-back-green',
         name: 'Dog Portfolio',
-        description: 'Created a fully fledge web application that showcases my three (3) Dogs.',
+        description: 'An intricately designed website exuding a touch of sophistication tailored for my three elegant canine companions.',
         link: 'https://dreigannadoit.github.io/doogos.github.io/',
+        responsive: 'Best viewed on PC',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
         name: 'Anti-Cyber-Grooming Website',
-        description: 'Designed a website that containes information regarding the topic of Cyber-Grooming.',
+        description: 'A website that containes information regarding the topic of Cyber-Grooming.',
         link: 'https://dreigannadoit.github.io/MilMiniPt.github.io/index.html',
+        responsive: 'Best viewed on PC',
     },
     {
         iconUrl: fist,
         theme: 'btn-back-black',
         name: 'Street Fighter inspired Game',
-        description: 'Designed a basic street fighter game',
-        link: 'https://github.com/Dreigannadoit/javascript_street_fighter_game.github.io',
+        description: 'A basic street fighter game I made for fun.',
+        link: 'https://dreigannadoit.github.io/streetfighergame.github.io/',
+        responsive: '',
     },
 ];

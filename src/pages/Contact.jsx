@@ -109,7 +109,7 @@ const Contact = () => {
               type='text'
               name='name'
               className='input'
-              placeholder='John'
+              placeholder='John Doe'
               required
               value={form.name}
               onChange={handleChange}
@@ -139,7 +139,7 @@ const Contact = () => {
               name='message'
               rows={4}
               className='input'
-              placeholder='Your vission is my Mission'
+              placeholder='Your Vision Is My Mission'
               required
               value={form.message}
               onChange={handleChange}
