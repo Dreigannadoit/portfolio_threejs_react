@@ -64,8 +64,8 @@ const FooterLong = () => {
                             </span>
                         </h1>
                         <hr className="border-slate-200 h-[5px] bg-white" />
-                        <p className='my-6 '>
-                            I'm a self-taught developer proficient in frontend and backend development. 
+                        <p className='my-6 text-justify'>
+                            I'm a self-taught developer proficient in both front-end and back-end development.
                         </p>
 
                         <Link to="/about" className='btn'>About Me</Link>
@@ -94,7 +94,8 @@ const FooterLong = () => {
                     </div>
 
                     <div className='sm:h-full sm:w-[30%] h-[30%] w-full flex flex-row justify-end items-center gap-2 text-white'>
-                        <p className='border-r-4 pr-2'>Lanao Del Norte, PH</p>
+                        <p>PH</p>
+                        <img className="h-[50%] border-r-4 pr-2" src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/1f1f5-1f1ed.svg" alt="" />
                         <p>NOV 22, 2023</p>
                     </div>
                 </div>

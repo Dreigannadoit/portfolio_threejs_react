@@ -179,6 +179,17 @@ body:has(.card[data-color="green"]:hover) {
   transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
 }
 
+.block-container p{
+  opacity: 0;
+  transform: translateY(70px);
+  transition: all 500ms ease;
+}
+.block-container:hover p{
+  opacity: 1;
+  transform: translateY(83px);
+  transition: all 500ms ease;
+}
+
 /* Neo Brutalism */
 .neo-brutalism-blue {
   background: #2b77e7;
@@ -365,3 +376,5 @@ body:has(.card[data-color="green"]:hover) {
 .hideNav #nav{
   transform: translateY(-100%);
 }
+
+/* I need sleep */

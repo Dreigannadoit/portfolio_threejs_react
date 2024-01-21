@@ -24,21 +24,21 @@ const rederContent = {
     ),
     2: (
         <InfoBox
-            text="I have worked on many programming languages with 5 years worth of experience..."
+            text="Since mid-2019, I've danced with HTML, tangoed with CSS, and orchestrated JavaScript symphonies in a delightful coding journey."
             link="/about"
             btnText="Learn More About Me"
         />
     ),
     3: (
         <InfoBox
-            text="I have developed many projects. Here are my best!"
+            text="I have successfully developed numerous projects. Here are some of my finest accomplishments:"
             link="/projects"
             btnText="Visit my Portfolio"
         />
     ),
     4: (
         <InfoBox
-            text="Let's bring your vission into reality"
+            text="Let's bring your vision into reality"
             link="/contact"
             btnText="Contact Me"
         />
