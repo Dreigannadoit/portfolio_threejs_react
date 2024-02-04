@@ -19,7 +19,7 @@ const rederContent = {
         <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue p-4 px-8 text-white mx-5">
             Hi I am a <span className='font-semibold'>Software Engineer</span>👋
             <br />
-            Who brings Ideas to life!
+            and I Bring Ideas To Life!
         </h1>
     ),
     2: (

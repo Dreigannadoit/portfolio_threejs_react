@@ -2,9 +2,10 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import Typewriter from 'typewriter-effect';
 
-import { skills, experiences, meStuffs } from '../constants'
+import { skills, experiences, meStuffs, projects } from '../constants'
 import CTA from '../components/CTA';
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -67,64 +68,50 @@ const About = () => {
       </div>
 
       <div className="py-16">
-        <h3 className='subhead-text'>Work Experience</h3>
+        <h3 className='subhead-text'>Project Timeline</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-            Here's the run down of all organizations that I have worked with. 
+          I have gone through many projects since mid-2019, but here are the best ones so far. Many of them are open-sourced and if you'd like to see them, feel freet to go to my <Link to="https://github.com/Dreigannadoit" className="underline decoration-1 text-black-500 font-semibold">Github</Link> or <Link to="https://codepen.io/dreigannadoit" className="underline decoration-1 text-black-500 font-semibold">CodePen</Link> Pages. Feel free to contribute your ideas for further enhancements. Your feedback is highly valued!
           </p>
         </div>
         
         {/* returns a error, but works */}
         <div className="mt-12 flex">
             <VerticalTimeline>
-              {experiences.map((experience) => (
+              {projects.map((project) => (
                 <VerticalTimelineElement 
-                  key={experience.company_name}
-                  date={experience.date}
+                  key={project.name}
+                  date={project.date}
                   icon={
                     <div className='flex justify-center items-center w-full h-full'>
-                      <img src={experience.icon} alt={experience.company_name} className='w-[80%] h-[80%] object-contain' />
+                      <img src={project.iconUrl} alt={project.name} className='w-[65%] object-contain' />
                     </div>
                   }
                   iconStyle={{
-                    background: experience.iconBg
+                    background: project.iconBg
                   }}
                   contentStyle={{
                     borderBottom: '8px',
                     borderStyle: 'solid',
-                    borderBottomColor: experience.iconBg,
+                    borderBottomColor: project.iconBg,
                     boxShadow: 'none'
                   }}
                 >
 
-                  <div className='p-2'>
-                    <h3 className='text-black text-xl font-poppins font-semibold'>
-                      {experience.title}
-                    </h3>
-                    <hr />
+                  <div className='p-2 rounded-md'>
+                    <img src={project.img} alt="" className='mb-2' />
                     <div className="leading-3">
-                      <p className='text-black-500 font-medium font-base' style={{margin:0}}>
-                        {experience.company_name}
-                      </p>
-                      <span className='text-black-500 font-light font-base'>
-                        {experience.orgType}
-                      </span>
+                      <h3 className='text-black text-xl font-poppins font-semibold'>
+                        {project.name}
+                      </h3>
+                      <hr />
                     </div>
-                  </div>
+                    <p>{project.description}</p>
+                    <p>{project.responsive}</p>
 
-                  <div className="">
-                    {experience.points.map((point, index) => (
-                      <h4></h4>
-                    ))}
+                    <br />
+                    <Link to={project.link} className='bg-[#2b77e7] p-3 mt-5 text-white'>Click To View</Link>
                   </div>
-
-                  <ul className='my-5 list-disc ml-5 space-y-2'>
-                    {experience.points.map((point, index) => (
-                      <li key={`experience-point-${index}`} className='text-black-500/50 font-normal pl-1 text-sm'>
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
                 </VerticalTimelineElement>
               ))}
             </VerticalTimeline>
