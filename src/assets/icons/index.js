@@ -39,7 +39,8 @@ import sword from './sword.png'
 import programing from './programing.png'
 import aR from './AR.png'
 import rnrSeaside from './rnrSeaside.svg'
- 
+import codepen from './codepen.svg'
+
 export {
     aR,
     upwork,
@@ -80,5 +81,6 @@ export {
     godot,
     c_sharp,
     blender,
-    rnrSeaside
+    rnrSeaside,
+    codepen
 }

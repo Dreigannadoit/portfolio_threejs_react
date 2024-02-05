@@ -35,7 +35,8 @@ import {
     blender,
     rnrSeaside,
     git,
-    aR
+    aR,
+    codepen
 } from "../assets/icons";
 
 export const meStuffs = [
@@ -166,6 +167,11 @@ export const socialLinks = [
         name: 'UpWork',
         iconUrl: upwork,
         link: 'https://www.upwork.com/freelancers/~01b289c0a98a48fadd',
+    },
+    {
+        name: 'codepen',
+        iconUrl: codepen,
+        link: 'https://codepen.io/dreigannadoit',
     }
 ];
 
