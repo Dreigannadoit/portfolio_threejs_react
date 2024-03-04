@@ -38,6 +38,9 @@ const FooterLong = () => {
                         <li className='sm:text-3xl text-[20px]'>
                             <Link to="/contact">Contact</Link>
                         </li>
+                        <li className='sm:text-3xl text-[20px]'>
+                            <Link to="/vlog">Vlog</Link>
+                        </li>
                     </ul>
                 </nav>
 

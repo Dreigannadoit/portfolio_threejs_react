@@ -39,6 +39,11 @@ import {
     codepen
 } from "../assets/icons";
 
+import{
+    vlog_1,
+    vlog_2,
+} from "../assets/vlog"
+
 export const meStuffs = [
     {
         imageUrl: persona,
@@ -252,5 +257,26 @@ export const projects = [
         link: 'https://dreigannadoit.github.io/madeeasy.github.io/Pages/header-page.html',
         responsive: 'Best viewed on PC',
         date: 'Nov 2022',
+    }
+];
+
+
+
+export const vlogEvents = [   
+    {
+        date: 'March 04, 2024',
+        time_entry: '11:33 AM',
+        headline: 'Created Vlog Page',
+        discription: "Template is done for now, I think it looks nice.",
+        img: vlog_2,
+        bg_color: "bg-red-200",
+    },
+    {
+        date: 'March 04, 2024',
+        time_entry: '10:27 AM',
+        headline: 'Development of Page',
+        discription: "This page is going to be for checking my progress as I continue my prgramming journey. And so I can update my github more frequently.",
+        img: vlog_1,
+        bg_color: "bg-orange-200 ",
     }
 ];
