@@ -51,7 +51,7 @@ const FooterLong = () => {
                             <br />
                             <div className='sm:w-[55%] w-full flex flex-col justify-between  sm:text-left text-center '>
                                 <h1 className="text-[400%] font-bold leading-[100%]">{meStuff.allias}</h1>
-                                <p className="">Made By {meStuff.name}</p>
+                                <p className="">Made By A really cool dude</p>
                             </div>
                         </div>
                     ))}

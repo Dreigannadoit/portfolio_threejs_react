@@ -1,6 +1,7 @@
 import React from 'react'
 import { vlog_1 } from '../assets/vlog'
 import { vlogEvents } from '../constants'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Vlog = () => {
   return (
@@ -26,7 +27,12 @@ const Vlog = () => {
                     </div>
 
                     <div className="md:h-full h-[50%] md:w-1/2 w-full overflow-hidden">
-                        <img className='object-cover h-full w-full ' src={vlogEvent.img} alt="" />
+                        <LazyLoadImage 
+                            src={vlogEvent.img} 
+                            width={400} height={400}
+                            alt="Image Alt"
+                            className='object-cover h-full w-full '
+                        />
                     </div>
                 </div>
             ))}

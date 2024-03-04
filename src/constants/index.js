@@ -42,6 +42,7 @@ import {
 import{
     vlog_1,
     vlog_2,
+    vlog_3,
 } from "../assets/vlog"
 
 export const meStuffs = [
@@ -261,8 +262,17 @@ export const projects = [
 ];
 
 
+// Note events are catigorized from latest(top most) to oldest(bottom most).
 
 export const vlogEvents = [   
+    {
+        date: 'March 04, 2024',
+        time_entry: '12:03 PM',
+        headline: 'Another Godot Project (Project Finite Space)',
+        discription: "Now that I'm done making the vlog page on my portflio, I can continue Project: Finite Space. This is going to be one of the first projects I'll rebuild after my Unity projects got currupted :(. Right now I want to focus on a universal movement system for all my future projects.",
+        img: vlog_3,
+        bg_color: "bg-indigo-100",
+    },
     {
         date: 'March 04, 2024',
         time_entry: '11:33 AM',
