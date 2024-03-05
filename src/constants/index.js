@@ -43,6 +43,8 @@ import{
     vlog_1,
     vlog_2,
     vlog_3,
+    vlog_4,
+    vlog_5
 } from "../assets/vlog"
 
 export const meStuffs = [
@@ -266,6 +268,22 @@ export const projects = [
 
 export const vlogEvents = [   
     {
+        date: 'March 05, 2024',
+        time_entry: '10:12 PM',
+        headline: 'Dart && Basics',
+        discription: "Finished A six hour introductory course today. I am now certified in the basics (literally)",
+        img: vlog_5,
+        bg_color: "bg-green-500 ",
+    },
+    {
+        date: 'March 05, 2024',
+        time_entry: '4:07 PM',
+        headline: 'Flutter and Dart',
+        discription: "I atteneded a code camp the specifically teaches Dart. A language I don't know (yet). I was able to get 68% of the basics completed in 3 hours. I may be able to finish the entire course by the end of the day. I also got a certificate, so that cool.",
+        img: vlog_4,
+        bg_color: "bg-blue-200 ",
+    },
+    {
         date: 'March 04, 2024',
         time_entry: '12:03 PM',
         headline: 'Another Godot Project (Project Finite Space)',
@@ -288,5 +306,5 @@ export const vlogEvents = [
         discription: "This page is going to be for checking my progress as I continue my prgramming journey. And so I can update my github more frequently.",
         img: vlog_1,
         bg_color: "bg-orange-200 ",
-    }
+    },
 ];

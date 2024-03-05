@@ -1,5 +1,4 @@
 import React from 'react'
-import { vlog_1 } from '../assets/vlog'
 import { vlogEvents } from '../constants'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -26,7 +25,7 @@ const Vlog = () => {
                         <p>{vlogEvent.discription}</p>
                     </div>
 
-                    <div className="md:h-full h-[50%] md:w-1/2 w-full overflow-hidden">
+                    <div className="md:h-full h-[50%] md:w-1/2 w-full rounded-lg overflow-hidden">
                         <LazyLoadImage 
                             src={vlogEvent.img} 
                             width={400} height={400}
