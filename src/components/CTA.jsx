@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const CTA = () => {
   return (
-    <section className="cta">
+    <section className="cta px-[15%]">
       <hr className="border-slate-200" />
 
       <p className='cta-text'>

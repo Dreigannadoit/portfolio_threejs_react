@@ -3,7 +3,7 @@ import { meStuffs } from "../constants";
 
 const Navbar = () => {
   return (
-    <header className="fixed z-50 w-screen h-[15%] bg-sky-500/[0] flex flex-row pr-[4%] pl-[3%] justify-between align-middle items-center" id="nav">
+    <header className="fixed z-50 w-screen h-[15%] 2xl:12% bg-sky-500/[0] flex flex-row pr-[4%] pl-[3%] justify-between align-middle items-center" id="nav">
       {meStuffs.map((meStuff, index) => (
         <NavLink key={index} to="/" className="w-25 h-full rounded-lg flex items-center justify-center gap-2 py-7">
           <img src={meStuff.imageLogoUrl} alt="" className="h-full object-cover" />
@@ -20,6 +20,10 @@ const Navbar = () => {
 
         <NavLink to="/vlog" className={({ isActive }) => isActive ? 'text-blue-500' :  'text-black'}>
           Vlog
+        </NavLink>
+        
+        <NavLink to="/contact" className={({ isActive }) => isActive ? 'text-blue-500' :  'text-black'}>
+          Contact
         </NavLink>
         
         {/* <NavLink to="/projects" className={({ isActive }) => isActive ? 'text-blue-500' :  'text-black'}>

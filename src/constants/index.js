@@ -40,6 +40,10 @@ import {
 } from "../assets/icons";
 
 import{
+    cv
+} from "../cv"
+
+import{
     vlog_1,
     vlog_2,
     vlog_3,
@@ -53,7 +57,8 @@ export const meStuffs = [
         name: "Robert Andrei N. Bamba",
         allias: "Drei Abmab",
         imageLogoUrl: logo,
-        imageLogoLightUrl: logoLight
+        imageLogoLightUrl: logoLight,
+        cv: cv
     }
 ]
 
@@ -265,6 +270,7 @@ export const projects = [
 
 
 // Note events are catigorized from latest(top most) to oldest(bottom most).
+
 
 export const vlogEvents = [   
     {

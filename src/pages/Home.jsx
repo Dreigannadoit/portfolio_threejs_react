@@ -49,13 +49,13 @@ const Home = () => {
     let rotationy = 0.1
 
     if(window.innerWidth < 768) {
-      screenScale = [3.7, 3.75, 3.7];
-      // screenScale = [0.21, 0.21, 0.21]; 
-      screenPosition = [0, -3.5, -5]
+      screenScale = [1.7, 1.75, 1.7];
+      // screenScale = [0.21, 0.21, 0.21];  
+      screenPosition = [0, -2.5, -10]
     } else {
-      screenScale = [4.5, 4.5, 4.5];
+      screenScale = [2.5, 2.5, 2.5];
       // screenScale = [0.3, 0.3, 0.3]; 
-      screenPosition = [0, -3.5, -5]
+      screenPosition = [0, -2.5, -10]
     }
 
     if(isRotating) {

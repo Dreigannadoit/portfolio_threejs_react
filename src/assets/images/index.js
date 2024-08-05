@@ -14,6 +14,7 @@ import made_easy from './made_easy.png'
 import sea from './sea.png'
 import street_fighter from './Street_Fighter.png'
 import zelda from './zelda.png'
+import filler from './bgfiller.svg'
 
 export {
     hero,
@@ -31,5 +32,6 @@ export {
     made_easy,
     sea,
     street_fighter,
-    zelda
+    zelda,
+    filler
 }

@@ -125,7 +125,7 @@ body:has(.card[data-color="green"]:hover) {
   transform-origin: bottom right;
   transform: rotateZ(15deg);
   will-change: transform;
-  box-shadow: 16px 0 40px #e4e4e4;
+  box-shadow: 16px 0 40px #e4e4e431;
 }
 
 .block-container .btn-back-red {
@@ -173,6 +173,7 @@ body:has(.card[data-color="green"]:hover) {
 
 .block-container:hover > .btn-back {
   transform: translateZ(20px) rotateZ(15deg) rotateX(-20deg) rotateY(-20deg);
+  box-shadow: 16px 0 40px #e4e4e4e0;
 }
 
 .block-container:hover > .btn-front {
@@ -378,3 +379,4 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 /* I need sleep */
+
