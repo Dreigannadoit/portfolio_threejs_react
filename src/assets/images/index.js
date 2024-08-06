@@ -15,6 +15,9 @@ import sea from './sea.png'
 import street_fighter from './Street_Fighter.png'
 import zelda from './zelda.png'
 import filler from './bgfiller.svg'
+import thumbnail_web from "./thumbnail_web.png"
+import vidac_1 from './vidac_1.png'
+import vidac_2 from './vidac_2.png'
 
 export {
     hero,
@@ -33,5 +36,8 @@ export {
     sea,
     street_fighter,
     zelda,
-    filler
+    filler,
+    thumbnail_web,
+    vidac_1,
+    vidac_2
 }

@@ -1,5 +1,4 @@
 import { 
-    tesla, 
     persona, 
     logo, 
     logoLight, 
@@ -10,7 +9,10 @@ import {
     made_easy,
     sea,
     street_fighter,
-    zelda
+    zelda,
+    thumbnail_web,
+    vidac_1,
+    vidac_2
 } from "../assets/images";
 import {
     upwork,
@@ -36,7 +38,8 @@ import {
     rnrSeaside,
     git,
     aR,
-    codepen
+    codepen,
+    plant
 } from "../assets/icons";
 
 import{
@@ -187,8 +190,41 @@ export const socialLinks = [
         link: 'https://codepen.io/dreigannadoit',
     }
 ];
-
+// vidac_1
 export const projects = [
+    {
+        iconUrl: estate,
+        iconBg: "#40BBED",
+        theme: 'btn-back-black',
+        img: thumbnail_web, 
+        name: 'Landing Page of Thumbnail Inspiration Hub Demo',
+        description: 'Concept Design of Thubnail Inspiration hub landing page',
+        link: 'https://dreigannadoit.github.io/thumbnailsite.github.io/',
+        responsive: '',
+        date: 'June 2024',
+    },
+    {
+        iconUrl: plant,
+        iconBg: "#40BBED",
+        theme: 'btn-back-green',
+        img: vidac_2, 
+        name: 'Plant People Website - FIGMA DESIGN',
+        description: 'Concept Design of Artificial plants e commerce website',
+        link: 'https://www.figma.com/design/wc0NhDO6BxWzqKXjjADxqx/Plant-People?node-id=0-1&t=SScceFei9Uzp1u1E-1',
+        responsive: '',
+        date: 'May 2024',
+    },
+    {
+        iconUrl: estate,
+        iconBg: "#40BBED",
+        theme: 'btn-back-blue',
+        img: vidac_1, 
+        name: 'VINDAC DESIGNERS AND BULDERS INC - FIGMA DESIGN',
+        description: 'Concept Design of VINDAC landing page',
+        link: 'https://www.figma.com/proto/BPyE7eq0qtOKC0qlB7rQJi/Untitled?node-id=3185-70&t=XFcDycNdc0HHsYH4-1&scaling=min-zoom&content-scaling=fixed&page-id=3176%3A2&starting-point-node-id=3185%3A70',
+        responsive: '',
+        date: 'April 2024',
+    },
     {
         iconUrl: fist,
         iconBg: "#40BBED",

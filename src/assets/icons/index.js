@@ -35,6 +35,7 @@ import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import fist from './fist.png'
 import pawprint from './pawprint.png'
+import plant from './plant.png'
 import sword from './sword.png'
 import programing from './programing.png'
 import aR from './AR.png'
@@ -82,5 +83,6 @@ export {
     c_sharp,
     blender,
     rnrSeaside,
-    codepen
+    codepen,
+    plant
 }
