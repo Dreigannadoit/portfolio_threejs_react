@@ -10,7 +10,8 @@
 }
 
 *{
-  transition: all 50ms ease-in-out;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
 }
 
 body {
@@ -377,6 +378,66 @@ body:has(.card[data-color="green"]:hover) {
 .hideNav #nav{
   transform: translateY(-100%);
 }
+
+.maskp{
+  -webkit-mask-image: url(./assets/images/proj_mask.svg);
+  mask: url(./assets/images/proj_mask.svg) center center / 100% no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#projects img.h-full.object-cover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#projects img.h-full.object-cover:hover{
+  transform: scale(1.2);
+}
+
+#projects .block{
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#projects .block:hover{
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  background-color: rgba(21, 64, 134, 0.302);
+}
+
+#projects .block .pdate{
+  transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#projects .block:hover .pdate{
+  top: 0;
+  right: 0;
+  width: 185px;
+  margin-top: 15px;
+
+}
+
+#projects .block:hover .plink{
+  margin-bottom: 15px;
+  margin-right: 2px;
+  width: 60px;
+  height: 60px;
+}
+
+#projects .block:hover .plink:hover{
+  background-color: #eeca67;
+}
+
+#projects .block:hover .plink:hover .curr{
+  left: 100%;
+  transform: translateY(0%);
+}
+
+#projects .block:hover .plink:hover .userhover{
+  left: 50%;
+}
+
+
 
 /* I need sleep */
 

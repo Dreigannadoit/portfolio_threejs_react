@@ -41,6 +41,7 @@ import programing from './programing.png'
 import aR from './AR.png'
 import rnrSeaside from './rnrSeaside.svg'
 import codepen from './codepen.svg'
+import thumbnailProjectIcon from './bulb.svg'
 
 export {
     aR,
@@ -84,5 +85,6 @@ export {
     blender,
     rnrSeaside,
     codepen,
-    plant
+    plant,
+    thumbnailProjectIcon
 }

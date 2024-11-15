@@ -39,7 +39,8 @@ import {
     git,
     aR,
     codepen,
-    plant
+    plant,
+    thumbnailProjectIcon
 } from "../assets/icons";
 
 import{
@@ -193,7 +194,7 @@ export const socialLinks = [
 // vidac_1
 export const projects = [
     {
-        iconUrl: estate,
+        iconUrl: thumbnailProjectIcon,
         iconBg: "#40BBED",
         theme: 'btn-back-black',
         img: thumbnail_web, 

@@ -1,46 +1,48 @@
-import { Link } from "react-router-dom"
-import { projects } from "../constants"
-import { arrow } from "../assets/icons"
-import CTA from "../components/CTA"
+import { Link } from "react-router-dom";
+import { projects } from "../constants";
+import { arrow } from "../assets/icons";
+import CTA from "../components/CTA";
 
 const Projects = () => {
   return (
-    <section className='max-container s-project' id="projects">
-      <h1 className='head-text text-center'>
-        My <br />
-        <span className='blue-gradient_text font-semibold drop-shadow text-[11vh]'>Projects</span>
-      </h1>
+    <section className="max-container s-project" id="projects">
+      <div className="flex flex-wrap gap-20 pb-[10%] justify-center">
+        {projects.map((project, index) => (
+          <div className="block h-[480px] w-[400px]">
+            <div key={index} className="h-full w-full">
+              <div className="relative top h-[255px] w-full">
+                <div className="pdate absolute h-[52px] w-[194px] flex justify-start z-40 right-5 top-5 items-start">
+                  <p className="text-center bg-black-500 w-full ml-5 text-l py-2 rounded-full text-white">
+                    {project.date}
+                  </p>
+                </div>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <p>
-          I have gone through many projects over my 4 years of coding, but here are the best ones so far. Many of them are open-sourced and if you'd like to see them, feel freet to go to my <Link to="https://github.com/Dreigannadoit" className="underline decoration-1 text-black-500 font-semibold">Github</Link> or <Link to="https://codepen.io/dreigannadoit" className="underline decoration-1 text-black-500 font-semibold">CodePen</Link> Pages. Feel free to contribute your ideas for further enhancements. Your feedback is highly valued!
-        </p>
-      </div>
+                <div className="img maskp h-full w-full">
+                  <img
+                    src={project.img}
+                    className="h-full object-cover"
+                    alt=""
+                  />
+                </div>
 
-      <div className="flex flex-wrap py-10 my-10  gap-16">
-        {projects.map((project) => (
-          <div className="lg:w-[400px] w-full rounded-md py-[6%] px-8 flex items-center flex-col justify-center c-shad" key={project.name}>
-            <div className="block-container w-12 h-12">
-              <div className={`btn-back rounded-xl ${project.theme}`}></div>
-              <div className="btn-front rounded-xl flex justify-center items-center">
-                <img src={project.iconUrl} alt="Project icon" className="w-1/2 h-1/2 object-contain"/>
+                <a 
+                  className="plink absolute z-40 right-0 bottom-0 h-[67px] w-[67px] p-5 bg-white rounded-full overflow-hidden"
+                  
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={arrow} alt="" className="curr z-40 absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]" />
+                  
+                  <img src={project.iconUrl} alt="" className="userhover h-1/2 w-1/2 z-40 absolute top-1/2 left-[-100%] translate-x-[-50%] translate-y-[-50%]" />
+                </a>
               </div>
-            </div>
 
-            <div className="mt-5 flex flex-col">
-              <h4 className="text-2xl font-poppins font-semibold">
-                {project.name}
-              </h4>
-              <p className="mt-2 text-slate-500">
-                {project.description}
-              </p>
-              <br />
-              <p>{project.responsive}</p>
-              <div className="mt-5 flex items-center gap-2 font-poppins">
-                <Link to={project.link} target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-600">
-                  Live To Project
-                </Link>
-                <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+              <div className="py-3 h-[275px] w-full">
+                <h1 className="text-2xl">{project.name}</h1>
+                <hr />
+                <br />
+                <p>{project.description}</p>
               </div>
             </div>
           </div>
@@ -48,12 +50,10 @@ const Projects = () => {
       </div>
 
       <hr className="border-slate-200 h-[5px] bg-slate-500" />
-      
+
       <CTA />
     </section>
+  );
+};
 
-
-  )
-}
-
-export default Projects
+export default Projects;

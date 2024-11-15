@@ -7,7 +7,7 @@ import FooterLong from "./components/FooterLong"
 
 const App = () => {
   return (
-    <main className="bg-slate-300/20 h-full overflow-y-auto overflow-x-hidden">
+    <main className="bg-[#E9F1F9] h-full overflow-y-auto overflow-x-hidden">
         <Router>
             
             <Navbar />
