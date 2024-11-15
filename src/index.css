@@ -94,6 +94,18 @@ body:has(.card[data-color="green"]:hover) {
   }
 }
 
+header {
+  transition: background-color 500ms ease, box-shadow 500ms ease;
+}
+
+
+header.scroll {
+  background-color: #E9F1F9;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background-color 500ms ease, box-shadow 500ms ease;
+}
+
+
 .glassmorphism {
   background: rgba(8, 116, 239, 0.07);
   backdrop-filter: blur(10px);

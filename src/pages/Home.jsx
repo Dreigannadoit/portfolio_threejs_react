@@ -32,13 +32,13 @@ const Home = () => {
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
-    let screenPosition = [0, -6.5, -43];
-    let rotation = [0.1 , 4.7, 0]
+    let screenPosition = [0, -50.5, -90];
+    let rotation = [0, 0, 0]
 
     if(window.innerWidth < 768) {
-      screenScale = [0.9, 0.9, 0.9]; 
+      screenScale = [0.8, 0.8, 0.8]; 
     } else {
-      screenScale = [1, 1, 1]; 
+      screenScale =  [0.6, 0.6, 0.6]; 
     }
 
     return [screenScale, screenPosition, rotation]
@@ -90,7 +90,7 @@ const Home = () => {
             position={[7, 10, 1]}
             intensity={2}
            />
-          <ambientLight intensity={0.5} />
+          <ambientLight intensity={1.5} />
           {/* <pointLight  /> */}
           {/* <spotLight /> */}
           <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={1} />
