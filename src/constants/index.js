@@ -12,7 +12,8 @@ import {
     zelda,
     thumbnail_web,
     vidac_1,
-    vidac_2
+    vidac_2,
+    hireCulture
 } from "../assets/images";
 import {
     upwork,
@@ -40,7 +41,8 @@ import {
     aR,
     codepen,
     plant,
-    thumbnailProjectIcon
+    thumbnailProjectIcon,
+    hireCultureLogo
 } from "../assets/icons";
 
 import{
@@ -193,6 +195,17 @@ export const socialLinks = [
 ];
 // vidac_1
 export const projects = [
+    {
+        iconUrl: hireCultureLogo,
+        iconBg: "#40BBED",
+        theme: 'btn-blue-black',
+        img: hireCulture, 
+        name: 'React and WordPress Developer',
+        description: 'At hireCulture, I contributed as a Full-Stack Developer, leveraging React and WordPress to deliver virtual assistant services.',
+        link: 'https://hirecultureva.com',
+        responsive: '',
+        date: 'Dec 2024',
+    },
     {
         iconUrl: thumbnailProjectIcon,
         iconBg: "#40BBED",

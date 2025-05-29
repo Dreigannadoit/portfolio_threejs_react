@@ -27,10 +27,10 @@ const FooterLong = () => {
     // }, [])
 
     return (
-        <footer className='sm:h-[105vh] h-[180vh] relative rounded-t-[100px] overflow-hidden s-footer'>
+        <footer className='sm:h-[20vh] h-[30vh] relative rounded-t-[100px] overflow-hidden s-footer'>
             
-            <div className="h-[100%] w-[100vw] bg-[#282726] py-[5%] px-[10%]">
-                <nav className='w-full h-[15%] text-white' >
+            <div className="h-[100%] w-[100vw] bg-[#282726] py-[45px] px-[10%]">
+                {/* <nav className='w-full h-[15%] text-white' >
                     <ul className='flex justify-between items-center gap-9 h-full'>
                         <li className='sm:text-3xl text-[20px]'>
                             <Link to="/">Home</Link>
@@ -39,7 +39,7 @@ const FooterLong = () => {
                             <Link to="/contact">Contact</Link>
                         </li>
                         <li className='sm:text-3xl text-[20px]'>
-                            <Link to="/vlog">Vlog</Link>
+                            <Link to="/vlog">Projects</Link>
                         </li>
                     </ul>
                 </nav>
@@ -74,11 +74,11 @@ const FooterLong = () => {
 
                 </div>
 
-                <hr className="border-slate-200" />
+                <hr className="border-slate-200" /> */}
 
-                <div className="w-full h-[10%] flex sm:flex-row flex-col mt-3 justify-between items-center gap-7">
-                    <nav className='sm:h-full sm:w-[20%] h-[20%] w-full'>
-                        <ul className='flex flex-row h-full w-full gap-2 justify-between'>
+                <div className="w-full h-[100%] flex sm:flex-row flex-col justify-between items-center">
+                    <nav className='sm:h-full sm:w-[30%] h-[100%] w-full'>
+                        <ul className='flex flex-row h-full w-full gap-4 justify-start'>
                             {socialLinks.map((socialLink, index) => (
                                 <li className='h-full' key={index}>
                                     <Link to={socialLink.link} className='h-full flex justify-center items-center'>
@@ -89,13 +89,13 @@ const FooterLong = () => {
                         </ul>
                     </nav>
 
-                    <div className='sm:h-full sm:w-[45%] h-[45%] w-full flex items-center justify-center'>
-                        <p className='text-white text-center'>&copy;2023 ROBERT ANDREI N. BAMBA || ALL RIGHTS RESERVED</p>
+                    <div className='sm:h-full sm:w-[40%] h-[100%] w-full flex items-center justify-center'>
+                        <p className='text-white text-center text-sm font'>&copy;2023 ROBERT ANDREI N. BAMBA || ALL RIGHTS RESERVED</p>
                     </div>
 
-                    <div className='sm:h-full sm:w-[30%] h-[30%] w-full flex flex-row justify-end items-center gap-2 text-white'>
+                    <div className='sm:h-full sm:w-[20%] h-[100%] w-full flex flex-row justify-end items-center gap-2 text-white'>
                         <p>PH</p>
-                        <img className="h-[50%] border-r-4 pr-2" src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/1f1f5-1f1ed.svg" alt="" />
+                        <img className="h-[100%] border-r-4 pr-2" src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/1f1f5-1f1ed.svg" alt="" />
                         <p>NOV 22, 2023</p>
                     </div>
                 </div>

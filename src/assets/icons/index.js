@@ -42,6 +42,7 @@ import aR from './AR.png'
 import rnrSeaside from './rnrSeaside.svg'
 import codepen from './codepen.svg'
 import thumbnailProjectIcon from './bulb.svg'
+import hireCultureLogo from './hireCultureLogo.png'
 
 export {
     aR,
@@ -86,5 +87,6 @@ export {
     rnrSeaside,
     codepen,
     plant,
-    thumbnailProjectIcon
+    thumbnailProjectIcon,
+    hireCultureLogo
 }

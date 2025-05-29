@@ -18,7 +18,6 @@ const App = () => {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/vlog" element={<Vlog/>} />
-                <Route path="/scroll" element={<Scroll/>} />
             </Routes>
 
             <FooterLong/>

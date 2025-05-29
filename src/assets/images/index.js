@@ -19,6 +19,7 @@ import thumbnail_web from "./thumbnail_web.png"
 import vidac_1 from './vidac_1.png'
 import vidac_2 from './vidac_2.png'
 import proj_mask from './proj_mask.svg'
+import hireCulture from './hireCulture.png'
 
 export {
     hero,
@@ -41,5 +42,6 @@ export {
     thumbnail_web,
     vidac_1,
     vidac_2,
-    proj_mask
+    proj_mask,
+    hireCulture
 }

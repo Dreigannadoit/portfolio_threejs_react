@@ -17,9 +17,11 @@ const InfoBox = ({text, link, btnText}) => {
 const rederContent = {
     1: (
         <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue p-4 px-8 text-white mx-5">
-            Hi I am a <span className='font-semibold'>Software Engineer</span>👋
+            Hi, I'm a <span className='font-semibold'>Software Engineer</span> 👋
             <br />
-            and I Bring Ideas To Life!
+            I craft solutions, <span className="font-semibold">build possibilities</span>,  
+            <br /> 
+            and help ideas <span className='italic'>take flight</span>.
         </h1>
     ),
     2: (
