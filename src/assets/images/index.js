@@ -20,6 +20,9 @@ import vidac_1 from './vidac_1.png'
 import vidac_2 from './vidac_2.png'
 import proj_mask from './proj_mask.svg'
 import hireCulture from './hireCulture.png'
+import DentalSystem from "./DentalSystem.png"
+import utr from "./utr.png"
+import DentalAppointment from "./DentalAppointment.png"
 
 export {
     hero,
@@ -43,5 +46,8 @@ export {
     vidac_1,
     vidac_2,
     proj_mask,
-    hireCulture
+    hireCulture,
+    DentalSystem,
+    utr,
+    DentalAppointment
 }

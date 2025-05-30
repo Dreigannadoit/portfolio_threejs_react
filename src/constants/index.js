@@ -13,7 +13,10 @@ import {
     thumbnail_web,
     vidac_1,
     vidac_2,
-    hireCulture
+    hireCulture,
+    DentalSystem,
+    utr,
+    DentalAppointment
 } from "../assets/images";
 import {
     upwork,
@@ -42,7 +45,14 @@ import {
     codepen,
     plant,
     thumbnailProjectIcon,
-    hireCultureLogo
+    hireCultureLogo,
+    DentalSystemIcon,
+    utrIcon,
+    DentalAppointmentIcon,
+    Postgresql,
+    MySQL,
+    Spring_Boot,
+    Vue
 } from "../assets/icons";
 
 import{
@@ -120,6 +130,11 @@ export const skills = [
         type: "Frontend",
     },
     {
+        imageUrl: Vue,
+        name: "Vue",
+        type: "Frontend",
+    },
+    {
         imageUrl: tailwindcss,
         name: "Tailwind",
         type: "Frontend",
@@ -138,6 +153,21 @@ export const skills = [
         imageUrl: django,
         name: "Django",
         type: "Backend",
+    },
+    {
+        imageUrl: Spring_Boot,
+        name: "Spring Boot",
+        type: "Backend",
+    },
+    {
+        imageUrl: Postgresql,
+        name: "Postgresql",
+        type: "Database",
+    },
+    {
+        imageUrl: MySQL,
+        name: "MySQL",
+        type: "Database",
     },
 ];
 
@@ -195,6 +225,39 @@ export const socialLinks = [
 ];
 // vidac_1
 export const projects = [
+    {
+        iconUrl: DentalAppointmentIcon,
+        iconBg: "#40BBED",
+        theme: 'btn-blue-black',
+        img: DentalAppointment, 
+        name: 'Patient Dental Clinic Appointment App Template - Design and Developed',
+        description: 'Developed a static template in react for a fictional clinic using React.',
+        link: 'https://dreigannadoit.github.io/DoctorAppointmentHCI/',
+        responsive: '',
+        date: 'May 2024',
+    },
+    {
+        iconUrl: utrIcon,
+        iconBg: "#40BBED",
+        theme: 'btn-blue-black',
+        img: utr, 
+        name: '19-Hour Cloud-Based Fullstack Web Game Development Challenge',
+        description: 'Developed a web-only game within 19 hours using a full-stack architecture: PostgreSQL, Spring Boot, and React. Integrated the backend and frontend using Node.js and Axios for seamless API communication. The API system was containerized and deployed using Docker for efficient cloud-based hosting.',
+        link: 'https://until-they-return.netlify.app/',
+        responsive: '',
+        date: 'April 2024',
+    },
+    {
+        iconUrl: DentalSystemIcon,
+        iconBg: "#40BBED",
+        theme: 'btn-blue-black',
+        img: DentalSystem, 
+        name: 'Frontend Software Developer/Designer – U.S. Dental Platform (React- Demo)',
+        description: 'Clean and Seal is a U.S.-based dental software solution designed to streamline dental records management by consolidating all patient information in one place. Built with React for a fast and modern user experience.',
+        link: 'https://dreigannadoit.github.io/dental_software/',
+        responsive: 'Not responsive',
+        date: 'Feb 2025',
+    },
     {
         iconUrl: hireCultureLogo,
         iconBg: "#40BBED",

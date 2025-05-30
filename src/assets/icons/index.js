@@ -19,6 +19,10 @@ import python from './python.svg'
 import godot from './Godot_icon.svg'
 import blender from './Blender.svg'
 import c_sharp from './Logo_C_sharp.svg'
+import Spring_Boot from './Spring_Boot.svg.png'
+import Postgresql from './Postgresql_elephant.svg.png'
+import MySQL from './MySQL_logo.svg.png'
+import Vue from "./Vue.js_Logo_2.svg.png"
 
 import upwork from './upwork.svg'
 import linkedin from './linkedin.svg'
@@ -43,6 +47,9 @@ import rnrSeaside from './rnrSeaside.svg'
 import codepen from './codepen.svg'
 import thumbnailProjectIcon from './bulb.svg'
 import hireCultureLogo from './hireCultureLogo.png'
+import DentalSystemIcon from "./DentalSystemIcon.png"
+import utrIcon from "./utrIcon.png"
+import DentalAppointmentIcon from "./DentalAppointmentIcon.svg"
 
 export {
     aR,
@@ -64,6 +71,10 @@ export {
     redux,
     sass,
     tailwindcss,
+    Spring_Boot,
+    Postgresql,
+    MySQL,
+    Vue,
     typescript,
     linkedin,
     twitter,
@@ -88,5 +99,8 @@ export {
     codepen,
     plant,
     thumbnailProjectIcon,
-    hireCultureLogo
+    hireCultureLogo,
+    DentalSystemIcon,
+    utrIcon,
+    DentalAppointmentIcon
 }

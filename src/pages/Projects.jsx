@@ -8,7 +8,7 @@ const Projects = () => {
     <section className="max-container s-project" id="projects">
       <div className="flex flex-wrap gap-20 pb-[10%] justify-center">
         {projects.map((project, index) => (
-          <div className="block h-[480px] w-[400px]">
+          <div className="block  w-[400px]">
             <div key={index} className="h-full w-full">
               <div className="relative top h-[255px] w-full">
                 <div className="pdate absolute h-[52px] w-[194px] flex justify-start z-40 right-5 top-5 items-start">
@@ -38,7 +38,7 @@ const Projects = () => {
                 </a>
               </div>
 
-              <div className="py-3 h-[275px] w-full">
+              <div className="py-3  w-full">
                 <h1 className="text-2xl">{project.name}</h1>
                 <hr />
                 <br />

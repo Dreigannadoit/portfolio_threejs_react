@@ -383,13 +383,9 @@ header.scroll {
 }
 
 #nav{
-  transform: translateY(0);
-  transition: transform 800ms;
+  transition: all 300ms ease;
 }
 
-.hideNav #nav{
-  transform: translateY(-100%);
-}
 
 .maskp{
   -webkit-mask-image: url(./assets/images/proj_mask.svg);

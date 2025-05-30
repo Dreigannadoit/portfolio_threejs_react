@@ -1,25 +1,73 @@
 import { NavLink } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { meStuffs } from "../constants";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
+      const currentScrollY = window.scrollY;
+      
+      // Always show navbar at top of page
+      if (currentScrollY <= 0) {
+        setVisible(true);
+        setLastScrollY(currentScrollY);
+        return;
+      }
+
+      // Determine scroll direction
+      const scrollingDown = currentScrollY > lastScrollY;
+      
+      if (scrollingDown && visible) {
+        // Hide navbar if scrolling down and it's currently visible
+        setVisible(false);
+      } else if (!scrollingDown && !visible) {
+        // Show navbar if scrolling up and it's currently hidden
+        setVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // Add some throttling to improve performance
+    const throttledScroll = throttle(handleScroll, 100);
+    window.addEventListener('scroll', throttledScroll);
+    
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', throttledScroll);
     };
-  }, []);
+  }, [lastScrollY, visible]);
+
+  // Simple throttle function
+  function throttle(func, limit) {
+    let lastFunc;
+    let lastRan;
+    return function() {
+      const context = this;
+      const args = arguments;
+      if (!lastRan) {
+        func.apply(context, args);
+        lastRan = Date.now();
+      } else {
+        clearTimeout(lastFunc);
+        lastFunc = setTimeout(function() {
+          if ((Date.now() - lastRan) >= limit) {
+            func.apply(context, args);
+            lastRan = Date.now();
+          }
+        }, limit - (Date.now() - lastRan));
+      }
+    };
+  }
 
   return (
     <header
-      className={`fixed z-50 w-screen h-[15%] 2xl:12% flex flex-row pr-[4%] pl-[3%] justify-between align-middle items-center ${
-        isScrolled ? "scroll" : ""
+      ref={navbarRef}
+      className={`fixed z-50 w-screen h-[15%] 2xl:h-[12%] flex flex-row pr-[4%] pl-[3%] justify-between align-middle items-center  ${
+        visible ? 'translate-y-0 bg-white shadow-sm' : '-translate-y-full bg-transparent'
       }`}
       id="nav"
     >
