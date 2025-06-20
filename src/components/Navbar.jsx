@@ -1,16 +1,19 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { meStuffs } from "../constants";
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [visible, setVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const navbarRef = useRef(null);
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       // Always show navbar at top of page
       if (currentScrollY <= 0) {
         setVisible(true);
@@ -20,7 +23,7 @@ const Navbar = () => {
 
       // Determine scroll direction
       const scrollingDown = currentScrollY > lastScrollY;
-      
+
       if (scrollingDown && visible) {
         // Hide navbar if scrolling down and it's currently visible
         setVisible(false);
@@ -35,7 +38,7 @@ const Navbar = () => {
     // Add some throttling to improve performance
     const throttledScroll = throttle(handleScroll, 100);
     window.addEventListener('scroll', throttledScroll);
-    
+
     return () => {
       window.removeEventListener('scroll', throttledScroll);
     };
@@ -45,7 +48,7 @@ const Navbar = () => {
   function throttle(func, limit) {
     let lastFunc;
     let lastRan;
-    return function() {
+    return function () {
       const context = this;
       const args = arguments;
       if (!lastRan) {
@@ -53,7 +56,7 @@ const Navbar = () => {
         lastRan = Date.now();
       } else {
         clearTimeout(lastFunc);
-        lastFunc = setTimeout(function() {
+        lastFunc = setTimeout(function () {
           if ((Date.now() - lastRan) >= limit) {
             func.apply(context, args);
             lastRan = Date.now();
@@ -66,9 +69,12 @@ const Navbar = () => {
   return (
     <header
       ref={navbarRef}
-      className={`fixed z-50 w-screen h-[15%] 2xl:h-[12%] flex flex-row pr-[4%] pl-[3%] justify-between align-middle items-center  ${
-        visible ? 'translate-y-0 bg-white shadow-sm' : '-translate-y-full bg-transparent'
-      }`}
+      className={`fixed z-50 w-screen h-[15%] 2xl:h-[12%] flex flex-row pr-[4%] pl-[3%] justify-between align-middle items-center ${isHome
+          ? 'bg-transparent' 
+          : visible
+            ? 'translate-y-0 bg-white shadow-sm'
+            : '-translate-y-full bg-transparent'
+        }`}
       id="nav"
     >
       {meStuffs.map((meStuff, index) => (
