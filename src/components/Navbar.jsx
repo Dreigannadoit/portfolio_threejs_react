@@ -66,6 +66,7 @@ const Navbar = () => {
     };
   }
 
+
   return (
     <header
       ref={navbarRef}
