@@ -35,8 +35,7 @@ const Navbar = () => {
       setLastScrollY(currentScrollY);
     };
 
-    // Add some throttling to improve performance
-    const throttledScroll = throttle(handleScroll, 100);
+    const throttledScroll = throttle(handleScroll, 120);
     window.addEventListener('scroll', throttledScroll);
 
     return () => {
